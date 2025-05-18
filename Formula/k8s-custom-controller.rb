@@ -6,11 +6,11 @@ class K8sController < Formula
     on_macos do 
         if Hardware::CPU.arm?
             url "https://github.com/manzil-infinity180/k8s-custom-controller/releases/download/v1.1.0/k8s-custom-controller_1.1.0_darwin_arm64.tar.gz"
-            ssh256 "d5b22934dfe7e62458c3a622dffafe374af27de1a50c4ff64ff82a42008d1bc8"
+            sha256 "d5b22934dfe7e62458c3a622dffafe374af27de1a50c4ff64ff82a42008d1bc8"
 
         elsif Hardware::CPU.intel?
             url "https://github.com/manzil-infinity180/k8s-custom-controller/releases/download/v1.1.0/k8s-custom-controller_1.1.0_darwin_amd64.tar.gz"
-            ssh256 "14de50937594237e8b5b1fa38430ec067669364a236b6b5b9a05ffa9ded8fc1b"
+            sha256 "14de50937594237e8b5b1fa38430ec067669364a236b6b5b9a05ffa9ded8fc1b"
         end
     end
 
