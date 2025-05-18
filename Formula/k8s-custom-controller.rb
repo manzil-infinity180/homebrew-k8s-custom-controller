@@ -1,4 +1,4 @@
-class k8sController < Formula 
+class K8sController < Formula
     desc "K8s-Custom-Controller creates services and ingress for you, if you create deployment"
     homepage "https://github.com/manzil-infinity180/k8s-custom-controller"
     version "1.1.0"
