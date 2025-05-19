@@ -10,10 +10,16 @@ Install from brew:
 brew tap manzil-infinity180/k8s-custom-controller
 brew install k8s-custom-controller
 ```
+```
+brew uninstall k8s-custom-controller 
+Uninstalling /opt/homebrew/Cellar/k8s-custom-controller/1.1.0... (4 files, 45.7MB)
+```
 
 ```
+# suppose your brew uninstall fail and then you changed your library and pushes so you need to untap first and then will do again tap and install
 brew untap manzil-infinity180/k8s-custom-controller
 ```
+
 
 ## NOTE 
 If your file is: `Formula/k8s-custom-controller.rb` Then your class must be: `class K8sCustomController < Formula`(`k8s-custom-controller.rb → K8sCustomController`)
